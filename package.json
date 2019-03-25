@@ -1,0 +1,29 @@
+{
+  "name": "UNO-Quiz",
+  "version": "0.0.1",
+  "description": "UNO Quiz",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "",
+  "keywords": [
+    "UNOCHAPECO",
+    "Quiz",
+    "UNO",
+    "Design",
+    "Computaçao"
+  ],
+  "author": "Jociel Souza",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^4.0.7",
+    "popper": "^1.0.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.3.1",
+    "node-xlsx": "^0.14.1",
+    "popper.js": "^1.14.7"
+  }
+}

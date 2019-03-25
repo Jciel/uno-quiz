@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="./game.css">
+        <title>Sortear Perguntas...</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="card">
+                <div class="card-header text-center">
+                    UNO Quiz
+                </div>
+                <!-- Card content -->
+                <div class="card-body">
+                    <div id="result-msg-row" class="row">
+                        <div id="result-msg-container" class="col-lg-12 text-center">
+                            <h3 id="result-msg"></h3>
+                        </div>
+                    </div>
+                
+                    <div id="question-header-container" class="row">
+                        <div id="question-number-container" class="col-lg-1 text-center">
+                            <p id="question-number">numero</p>
+                        </div>
+    
+                        <div id="question-description-container" class="col-lg-10">
+                            <p id="question-description">descrição</p>
+                        </div>
+                    </div>
+
+                    <div id="answers-container">
+                        <div id="answers-container-1" class="row">
+                            <div id="question-answer-A-container" class="col-lg-5 question-answer-container">
+                                <div class="row">
+                                    <div class="col-lg-1 answer">A</div>
+                                    <div id="answer-text-A" class="col-lg-11 answer-description">
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div id="question-answer-B-container" class="col-lg-5 question-answer-container">
+                                <div class="row">
+                                    <div class="col-lg-1 answer">B</div>
+                                    <div id="answer-text-B" class="col-lg-11 answer-description">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div id="answers-container-2" class="row">
+                            <div id="question-answer-C-container" class="col-lg-5 question-answer-container">
+                                <div class="row">
+                                    <div class="col-lg-1 answer">C</div>
+                                    <div id="answer-text-C" class="col-lg-11 answer-description">
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div id="question-answer-D-container" class="col-lg-5 question-answer-container">
+                                <div class="row">
+                                    <div class="col-lg-1 answer">D</div>
+                                    <div id="answer-text-D" class="col-lg-11 answer-description">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer text-center">
+                    <div class="btn-group">
+                        <button id="btn-answer" type="button" class="btn btn-secondary btn btn-success">Responder</button>
+                        <button id="btn-next-question" type="button" class="btn btn-secondary btn btn-success">Próxima pergunta</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            require('./game.js')
+            require("../../node_modules/bootstrap/js/dist/modal")
+        </script>
+
+
+
+        <div class="modal fade" id="modalConfirmAnswer" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Comfirmar resposta</h5>
+                </div>
+
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <p>Pergunta: </p>
+                            <p id="question"></p>
+                        </div>
+    
+                        <div class="row">
+                            <p>Sua Resposta: </p>
+                            <br>
+                            <p id="chosen-answer"></p>
+                        </div>
+
+                        <div class="row">
+                            <p>Você está certo disso?</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Não</button>
+                    <button id="confirm-answer" type="button" class="btn btn-primary">Sim</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </body>
+</html>

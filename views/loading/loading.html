@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+        <title>Loading...</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="card text-center">
+                <div class="card-header">
+                    UNO Quiz
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-lg-6 offset-3">
+                            <h1>LOADING...</h1>
+
+                            <div class="input-group">
+                                <div class="custom-file">
+                                  <input type="file" class="custom-file-input" id="file-questions">
+                                  <label class="custom-file-label" for="file-questions">Escolha o arquivo de questões</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button id="btn-start" type="button" class="btn btn-secondary btn btn-success">Começar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            require('./loading.js')
+        </script>
+    </body>
+</html>

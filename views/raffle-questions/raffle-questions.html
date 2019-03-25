@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="./raffle-questions.css">
+        <title>Sortear Perguntas...</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="card text-center">
+                <div class="card-header">
+                    UNO Quiz
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div id="container-input" class="offset-3 col-lg-6">
+                                <label for="question-quantity">Quantidade de questões: </label>
+                                <input id="question-quantity" class="form-control" type="text" name="question-quantity">
+                        </div>
+                        <div id="container-alert" class="container-alert offset-3 col-lg-6">
+                            <h1>Questões sorteadas, vamos começar?</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button id="btn-raffle-questions" type="button" class="btn btn-secondary btn btn-success">Sortear</button>
+                        <button id="btn-start" type="button" class="btn btn-secondary btn btn-success btn-start">Vamos começar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            require('./raffle-questions.js')
+        </script>
+    </body>
+</html>
